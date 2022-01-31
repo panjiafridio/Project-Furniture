@@ -1,0 +1,503 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --kuning: #ffba00;
+    --coklat: #b46617;
+    --hijau: #6d9773;
+    --hitam: #0c3b2e;
+}
+.section1{
+    background: var(--coklat);
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Untuk Navbar */
+nav{
+    width: 90%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.navbar{
+    display: flex;
+    margin: 20px;
+}
+.navbar li{
+    list-style: none;
+    margin: 0 20px;
+}
+.navbar li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: monospace;
+}
+.login{
+    margin-top: 20px;
+}
+.login a{
+    font-family: monospace;
+    font-size: 1.2rem;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    transition: .5s all;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.login a:hover{
+    background: #fff;
+    color: var(--coklat);
+}
+.logo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    transition: .5s all;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.logo span{
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: 8%;
+    font-weight: 500;
+    color: var(--kuning);
+    font-size: 1.7rem;
+}
+select{
+    background: none;
+    color: #fff;
+    font-family: monospace;
+    border: none;
+    outline: none;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+option{
+    cursor: pointer;
+    color: #fff;
+    background: var(--coklat);
+    border: none;
+}
+/* Text Atas Header ======================================*/
+
+.text-header{
+    position: relative;
+    left: 20%;
+    top: 5%;
+}
+.text-header h2{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    position: relative;
+    opacity: 0.8;
+}
+.text-header h2::before{
+    content: '';
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    background: #fff;
+    top: 10px;
+    left: -60px;
+}
+.text-header h1{
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    margin-top: 40px;
+}
+/* Section kedua */
+.section2{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+/* Image Inti ========================================= */
+
+.image-inti img{
+    width: 70%;
+    height: 75vh;
+    position: absolute;
+    left: 10%;
+    top: -50%;
+
+}
+/* Keterangan Product ============================== */
+
+.keterangan-product{
+    position: absolute;
+    z-index: 99;
+    width: 27%;
+    height: 35vh;
+    background: var(--coklat);
+    right: 20%;
+    box-shadow: 0 0 10px var(--hitam);
+}
+.keterangan-product h1, .keterangan-product h4{
+    font-size: 1.5rem;
+    font-family: monospace;
+    color: #fff;
+    font-weight: lighter;
+    margin: 20px 0 0 20px;
+    position: relative;
+}
+.fas{
+    color: var(--kuning);
+}
+.keterangan-product h4{
+    font-size: 1.2rem;
+}
+.keterangan-product h4::after{
+    content: '';
+    width: 40px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 10px;
+    right: 150px;
+}
+.keterangan-product span{
+    margin-left: 20%;
+}
+.teks-diskon{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+}
+.teks-diskon2{
+    margin-left: 5%;
+}
+.card{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px #212121;
+    width: 20%;
+    height: 50%;
+    z-index: 0;
+    cursor: pointer;
+}
+.aksesoris{
+    width: 270px;
+    height: 320px;
+    background-color: #ffba00;
+    border-radius: 20px;
+    z-index: -1;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    transform: rotate(30deg);
+    transition: .5s all;
+}
+.card:hover ~ .aksesoris{
+    transform: rotate(0);
+}
+.diskon{
+    font-size: 6rem;
+    font-family: monospace;
+    width: 10%;
+    position: absolute;
+    top: 40%;
+    left: 14%;
+    text-align: right;
+    z-index: -1;
+    transition: .5s all;
+    color: red;
+}
+.card:hover ~ .diskon{
+    left: 25%;
+}
+.card h2{
+    font-family: monospace;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+.card img{
+    width : 80%;
+    border-right: 2px solid #b46617;
+    padding-right: 20px;
+}
+.image, .image2{
+    position: absolute;
+    width: 25%;
+    top: 60%;
+    right: 5%;
+}
+.image2{
+    width: 13%;
+    top: 30%;
+    right: 25%;
+    filter: brightness(0.7);
+}
+.aksesoris2{
+    width: 250px;
+    height: 250px;
+    box-sizing: border-box;
+    border-radius: 50%;right: 10%;
+    border: 30px solid #b46617;
+    position: absolute;
+    top: 100%;
+    right: 20%;
+    opacity: 0.9;
+    z-index: -1;
+}
+/* Section 3 */
+
+.section3{
+    width: 100%;
+    background-color: #0c3b2e;
+    height: 100vh;
+}
+.harga-produk{
+    margin-top: 5%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+.harga-produk-kiri{
+    position: relative;
+}
+.harga-produk-kiri h1{
+    font-family: monospace;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 5% 0 0 5%;
+    position: relative;
+    color: #fff;
+    opacity: 0.8;
+}
+.harga-produk-kiri h1::after{
+    content: '';
+    width: 2px;
+    border-radius: 10px;
+    height: 200px;
+    position: absolute;
+    top: 80px;
+    right: 60px;
+    background-color: #fff;
+}
+.harga-produk-kiri h2{
+    position: absolute;
+    font-size: 2rem;
+    font-family: monospace;
+    left: 80%;
+}
+.harga-produk-kiri img{
+    margin-top: 10%;
+    width: 70%;
+}
+.harga-produk-kanan{
+    background-color: #28a582;
+    z-index: 9;
+}
+.teks-harga{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5% auto;
+}
+.teks-harga h1{
+    font-family: monospace;
+    font-size: 3rem;
+    color: #fff;
+}
+.teks-deskripsi{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1% auto;
+}
+.teks-deskripsi p{
+    width: 60%;
+    font-family: monospace;
+    font-size: 1.2rem;
+    color: white;
+}
+.teks-deskripsi-gambar{
+    display: flex;
+    flex-direction: column;
+}
+.teks-deskripsi-gambar .div1, .teks-deskripsi-gambar .div2{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+
+}
+.teks-deskripsi-gambar .div1{
+    background-image: url('/image/image-home.jpg');
+    background-position: right;
+    background-size: cover;
+}
+.teks-deskripsi-gambar .div2{
+    background-image: url('/image/image-home.jpg');
+    background-position: left;
+    background-size: cover;
+}
+.detail-harga{
+    width: 80%;
+    height: 30%;
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: 0 30px 40px #0c3b2e;
+    position: relative;
+}
+.add-to-chart{
+    width: 15%;
+    height: 20%;
+    background-color: #b46617;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+    border-radius: 10px;
+    transition: .5s all;
+    cursor: pointer;
+}
+.add-to-chart:hover{
+    box-shadow: 0 0 10px #212121;
+}
+.add-to-chart button{
+    background: transparent;
+    border: none;
+    font-family: monospace;
+    color: white;
+    cursor: pointer;
+}
+.detail-harga h1{
+    font-family: monospace;
+    font-size: 1.7rem;
+    color: #0c3b2e;
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+.detail-harga h1::after{
+    content: '';
+    width: 15px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #0c3b2e;
+    position: absolute;
+    top: 5%;
+    left: -5%;
+}
+.tambah-barang{
+    width: 20%;
+    position: absolute;
+    top: 7%;
+    right: 15%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 2px solid #1b1b1a;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+}
+.tambah-barang .plus{
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    padding: 6px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* media querys */
+@media (max-width : 650px){
+    .navbar{
+        display: none;
+    }
+    .login{
+        margin-top: 30px;
+    }
+    .logo span{
+        top: 6%;
+    }
+    .image-inti img{
+        height: 50vh;
+        top: -40%;
+        width: 80%;
+    }
+    .keterangan-product{
+        width: 40%;
+        height: 25vh;
+        top: -10%;
+        right: 10%;
+    }
+    .keterangan-product h4::after{
+        display: none;
+    }
+    .card{
+        width: 50%;
+        top: 20%;
+        height: 45%;
+    }
+    .aksesoris{
+        display: none;
+    }
+    .diskon{
+        left: 25%;
+        top: 20%;
+    }
+    .card:hover ~ .diskon{
+        left: 55%;
+    }
+    .teks-diskon{
+        font-size: 1.5rem;
+        top: 50%;
+    }
+    .image, .image2{
+        display: none;
+    }
+    .aksesoris2{
+        width: 170px;
+        height: 170px;
+        border: 20px solid #b46617;
+    }
+    .section2{
+        height: 90vh;
+    }
+    .harga-produk{
+        margin-top: 0;
+        grid-template-columns: 1fr;
+    }
+    .harga-produk-kiri img{
+        width: 50%;
+    }
+    .teks-deskripsi p{
+        font-size: 1rem;
+    }
+    .detail-harga{
+        height: 40%;
+    }
+    .detail-harga h1{
+        font-size: 1.2rem;
+    }
+    .add-to-chart{
+        width: 30%;
+    }
+    .detail-harga h1::after{
+        width: 10px;
+        height: 80px;
+    }
+}
